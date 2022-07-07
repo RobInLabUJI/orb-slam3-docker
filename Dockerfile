@@ -15,5 +15,9 @@ RUN wget --no-check-certificate https://github.com/IntelRealSense/librealsense/a
     make install
 
 RUN cd /tmp/ORB_SLAM3 && \
+    git remote set-url origin https://github.com/RobInLabUJI/ORB_SLAM3.git && \
+    git pull
+
+RUN cd /tmp/ORB_SLAM3 && \
     ./build.sh
     
