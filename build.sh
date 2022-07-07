@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker build -t robinlab/orb-slam3 .
+docker build -t robinlab/orb-slam3 .
